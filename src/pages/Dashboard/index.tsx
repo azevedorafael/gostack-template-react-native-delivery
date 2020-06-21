@@ -67,7 +67,7 @@ const Dashboard: React.FC = () => {
     }
 
     loadFoods();
-  }, [selectedCategory, searchValue]);
+  }, [selectedCategory]);
 
   useEffect(() => {
     async function loadCategories(): Promise<void> {

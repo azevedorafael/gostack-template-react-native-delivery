@@ -43,7 +43,7 @@ const Orders: React.FC = () => {
               thumbnail_url,
               name,
               description,
-              formattedPrice: formatValue(price),
+              formattedValue: formatValue(price),
             };
           },
         );
@@ -76,7 +76,7 @@ const Orders: React.FC = () => {
               <FoodContent>
                 <FoodTitle>{item.name}</FoodTitle>
                 <FoodDescription>{item.description}</FoodDescription>
-                <FoodPricing>{item.formattedPrice}</FoodPricing>
+                <FoodPricing>{item.formattedValue}</FoodPricing>
               </FoodContent>
             </Food>
           )}
